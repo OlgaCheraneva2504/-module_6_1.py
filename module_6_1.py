@@ -1,9 +1,9 @@
 class Animal:
-    alive = True  # живой
-    fed = False  # накормленный
 
     def __init__(self, name):
         self.name = name
+        self.alive = True   # живой
+        self.fed = False  # накормленный
 
     def eat(self, food):
         if isinstance(food, Plant):
@@ -16,10 +16,10 @@ class Animal:
 
 
 class Plant:
-    adible = False  # съедобность
 
     def __init__(self, name):
         self.name = name
+        self.adible = False  # съедобность
 
 
 class Mammal(Animal):   # Млекопитающее
